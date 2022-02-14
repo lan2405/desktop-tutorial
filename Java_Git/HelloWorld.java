@@ -7,14 +7,14 @@ package Java_Git;
 import java.util.Scanner;
 
 
-public class helloworld {
+public class HelloWorld {
     /*一个java文件只能有一个public类且为主类 */
     static long args1;
     static int args2;
     /*一个java允许重载多个main方法（主方法） */
     public static void main(String[] args) {
         args2=Int_input();
-        args1=String_input();
+        args1=Long_input();
         Fishermen a=new Fishermen(args1,args2);
         a.show();
     }
@@ -25,7 +25,7 @@ public class helloworld {
         input.close();
         return a;
     }
-    public static long String_input(){
+    public static long Long_input(){
         long a;
         Scanner input=new Scanner(System.in);
         a=input.nextLong();
@@ -33,6 +33,7 @@ public class helloworld {
         return a;
     }
 }
+
 /**
  * 渔民类 
  *  */
@@ -51,9 +52,14 @@ class Fishermen{
 }
 /**鱼竿类 */
 class Fishing_rod{
+    int Length;
+    long color;
+    Fishing_rod(){
 
+    }
 }
 /**鱼类 */
 class Fish{
+
 
 }
