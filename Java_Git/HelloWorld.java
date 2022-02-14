@@ -69,5 +69,4 @@ class Fishing_rod{
 /**鱼类 */
 class Fish{
 
-
 }
