@@ -11,7 +11,7 @@ public class HelloWorld {
     /*一个java文件只能有一个public类且为主类 */
     static long args1;
     static int args2;
-    /*一个java允许重载多个main方法（主方法） */
+    /**一个java允许重载多个main方法（主方法） */
     public static void main(String[] args) {
         args2=Int_input();
         args1=Long_input();
@@ -40,12 +40,15 @@ public class HelloWorld {
 class Fishermen{
     long gender;
     int age;
+    /**构造函数*/
     Fishermen(Long a,int b){
         gender=a;age=b;
     }
+    /**展示信息*/
     public void show(){
         System.out.printf("这个%s渔民,%d岁",gender,age);
     }
+    /**工作*/
     public void work(){
 
     }
@@ -54,8 +57,11 @@ class Fishermen{
 
 /**鱼竿类 */
 class Fishing_rod{
+    /**长度*/
     int Length;
+    /**颜色*/
     long color;
+    /**构造函数*/
     Fishing_rod(){
 
     }
