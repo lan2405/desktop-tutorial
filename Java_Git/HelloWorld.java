@@ -48,6 +48,7 @@ class Fishermen{
     public void show(){
         System.out.printf("这个%s渔民,%d岁",gender,age);
     }
+
     /**工作*/
     public void work(){
 
@@ -66,6 +67,7 @@ class Fishing_rod{
 
     }
 }
+
 /**鱼类 */
 class Fish{
 
