@@ -32,7 +32,6 @@ public class helloworld {
         input.close();
         return a;
     }
-
 }
 /**
  * 渔民类 
