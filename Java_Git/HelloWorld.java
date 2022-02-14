@@ -50,6 +50,8 @@ class Fishermen{
 
     }
 }
+
+
 /**鱼竿类 */
 class Fishing_rod{
     int Length;
