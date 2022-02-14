@@ -7,9 +7,11 @@ package Java_Git;
 import java.util.Scanner;
 
 
-public class helloworld {/*一个java文件只能有一个public类 */
+public class helloworld {
+    /*一个java文件只能有一个public类且为主类 */
     static long args1;
     static int args2;
+    /*一个java允许重载多个main方法（主方法） */
     public static void main(String[] args) {
         args2=Intinput();
         args1=Stringinput();
