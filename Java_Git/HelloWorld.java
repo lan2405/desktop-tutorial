@@ -18,6 +18,10 @@ public class HelloWorld {
         Fishermen a=new Fishermen(args1,args2);
         a.show();
     }
+
+    /**
+     * 输入数字
+     */
     public static int Int_input(){
         int a;
         System.out.println("输入一个数字");
@@ -25,6 +29,10 @@ public class HelloWorld {
         a=input.nextInt();
         return a;
     }
+
+    /**
+     * 输入Long
+     */
     public static long Long_input(){
         long a;
         System.out.println("输入一串字符");
@@ -32,6 +40,10 @@ public class HelloWorld {
         a=input.nextLong();
         return a;
     }
+
+    /**
+     * 输入字符串
+     */
     public static String String_input(){
         String a;
         System.out.println("输入姓名");
@@ -51,9 +63,10 @@ class Fishermen{
     Fishermen(String a,int b){
         gender=a;age=b;
     }
+
     /**展示信息*/
     public void show(){
-        /*System.out.printf("这个%s渔民,%d岁",gender,age);*/
+        //System.out.printf("这个%s渔民,%d岁",gender,age);
         System.out.println("这个名为"+gender+"的渔民"+age+"岁");
     }
 
@@ -78,5 +91,7 @@ class Fishing_rod{
 
 /**鱼类 */
 class Fish{
+    String food;
+
 
 }
