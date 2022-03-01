@@ -22,14 +22,12 @@ public class HelloWorld {
         int a;
         Scanner input=new Scanner(System.in);
         a=input.nextInt();
-        input.close();
         return a;
     }
     public static long Long_input(){
         long a;
         Scanner input=new Scanner(System.in);
         a=input.nextLong();
-        input.close();
         return a;
     }
 }
