@@ -9,25 +9,34 @@ import java.util.Scanner;
 
 public class HelloWorld {
     /*一个java文件只能有一个public类且为主类 */
-    static long args1;
+    static String args1;
     static int args2;
     /**一个java允许重载多个main方法（主方法） */
     public static void main(String[] args) {
         args2=Int_input();
-        args1=Long_input();
+        args1=String_input();
         Fishermen a=new Fishermen(args1,args2);
         a.show();
     }
     public static int Int_input(){
         int a;
+        System.out.println("输入一个数字");
         Scanner input=new Scanner(System.in);
         a=input.nextInt();
         return a;
     }
     public static long Long_input(){
         long a;
+        System.out.println("输入一串字符");
         Scanner input=new Scanner(System.in);
         a=input.nextLong();
+        return a;
+    }
+    public static String String_input(){
+        String a;
+        System.out.println("输入姓名");
+        Scanner input=new Scanner(System.in);
+        a=input.next();
         return a;
     }
 }
@@ -36,15 +45,16 @@ public class HelloWorld {
  * 渔民类 
  *  */
 class Fishermen{
-    long gender;
+    String gender;
     int age;
     /**构造函数*/
-    Fishermen(Long a,int b){
+    Fishermen(String a,int b){
         gender=a;age=b;
     }
     /**展示信息*/
     public void show(){
-        System.out.printf("这个%s渔民,%d岁",gender,age);
+        /*System.out.printf("这个%s渔民,%d岁",gender,age);*/
+        System.out.println("这个名为"+gender+"的渔民"+age+"岁");
     }
 
     /**工作*/
